@@ -1,0 +1,102 @@
+<Testbed>
+    <Properties>
+        <bitrate>750</bitrate>
+        <host>ssltester.spt-technology.com</host>
+        <server_port>8080</server_port>
+        <license_key>3M2W-FQ86-VFSK-SN49</license_key>
+        <publish_buffer_time>0.5</publish_buffer_time>
+        <subscribe_buffer_time>0.5</subscribe_buffer_time>
+        <port>8554</port>
+        <stream1>stream1</stream1>
+        <stream2>stream2</stream2>
+        <context>live</context>
+        <camera_width>640</camera_width>
+        <camera_height>360</camera_height>
+        <debug_view>true</debug_view>
+        <audio_on>true</audio_on>
+        <video_on>true</video_on>
+        <record_mode>Live</record_mode>
+        <sample_rate>44100</sample_rate>
+        <fps>24</fps>
+        <sm_version>3.1</sm_version>
+    </Properties>
+    <Tests>
+
+        <Test title="Home">
+
+            <description>Allows you to change stream names and host in-app</description>
+
+            <Properties>
+            </Properties>
+
+            <name>Home</name>
+            <class>Home</class>
+        </Test>
+
+        <Test title="Publish">
+
+            <description>Simple publish example!</description>
+
+            <Properties>
+            </Properties>
+
+            <name>Publish</name>
+            <class>PublishTest</class>
+        </Test>
+
+        <Test title="Publish - High sample rate">
+
+            <description>Simple publish example with high sample rate</description>
+
+            <Properties>
+                <sample_rate>44100</sample_rate>
+            </Properties>
+
+            <name>Publish - High Sample Rate</name>
+            <class>PublishTest</class>
+        </Test>
+
+        <Test title="Publish - 1080p">
+
+            <description>A high quality publisher</description>
+
+            <Properties>
+                <camera_width>1920</camera_width>
+                <camera_height>1080</camera_height>
+                <bitrate>4500</bitrate>
+            </Properties>
+
+            <name>Publish - 1080p</name>
+            <class>PublishTest</class>
+        </Test>
+
+        <Test title="Publish - ABR">
+
+            <description>Publisher with AdaptiveBitrateController</description>
+
+            <Properties>
+                <camera_width>640</camera_width>
+                <camera_height>480</camera_height>
+                <bitrate>1000</bitrate>
+            </Properties>
+
+            <name>Publish - ABR</name>
+            <class>PublishABRTest</class>
+        </Test>
+
+
+
+        <Test title="Subscribe">
+
+            <description>Simple Subscribe Test!</description>
+
+            <Properties>
+            </Properties>
+
+            <name>Subscribe</name>
+            <class>SubscribeTest</class>
+        </Test>
+
+    </Tests>
+
+</Testbed>

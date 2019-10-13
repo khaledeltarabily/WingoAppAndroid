@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/whitecolor"
+    android:orientation="horizontal"
+    >
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/_10sdp"
+
+    android:layout_marginTop="@dimen/_10sdp"
+    android:layout_marginBottom="@dimen/_10sdp"
+    android:gravity="center"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        >
+<ImageView
+    android:layout_width="@dimen/_15sdp"
+    android:layout_height="@dimen/_15sdp"
+    android:src="@drawable/comment2"
+    android:id="@+id/Comment"
+    />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:id="@+id/comment"
+            android:layout_toEndOf="@+id/Comment"
+            android:hint="@string/write_a_comment"
+            android:textSize="@dimen/_12ssp"
+            android:textColor="@color/gray"
+            android:background="@color/transparent"
+            android:layout_gravity="center_vertical"
+            android:maxLength="23"
+             />
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:gravity="end"
+
+            >
+        <ImageView
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_25sdp"
+            android:id="@+id/fly_it"
+            android:src="@drawable/bullet"
+            />
+
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="@dimen/_30sdp"
+android:layout_marginStart="@dimen/_5sdp"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:background="@color/gray" />
+
+            <ImageView
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:src="@drawable/send"
+                android:id="@+id/send"
+
+                />
+        </LinearLayout>
+</LinearLayout>
+</LinearLayout>

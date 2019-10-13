@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    tools:context=".view.steptwosign.StepTwoSignActivity">
+
+    <RelativeLayout
+        android:id="@+id/tbSign"
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:layout_height="@dimen/_40sdp">
+
+        <ImageView
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_centerVertical="true"
+            android:onClick="finish"
+            app:srcCompat="@drawable/ic_action_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/signin_signup_with_your_phone_number"
+            android:textColor="@color/appColorBlack"
+            android:textSize="@dimen/_12ssp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/lSign"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_32sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:layout_marginEnd="@dimen/_32sdp"
+            android:orientation="horizontal">
+
+            <!--<Spinner-->
+            <!--android:id="@+id/spCC"-->
+            <!--android:layout_width="@dimen/_60sdp"-->
+            <!--android:layout_height="@dimen/_35sdp"-->
+            <!--android:layout_marginBottom="@dimen/_2sdp"-->
+            <!--android:visibility="gone"-->
+            <!--android:background="@drawable/custom_white_container"-->
+            <!--android:elevation="@dimen/_2sdp" />-->
+
+            <com.hbb20.CountryCodePicker
+                android:id="@+id/spCC"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_marginBottom="@dimen/_2sdp"
+                android:layout_weight="1"
+                android:background="@drawable/custom_white_container"
+                android:gravity="center"
+                app:ccpDialog_allowSearch="false"
+                app:ccpDialog_backgroundColor="@color/appColorWhite"
+                app:ccpDialog_initialScrollToSelection="true"
+                app:ccpDialog_keyboardAutoPopup="false"
+                app:ccpDialog_showCloseIcon="true"
+                app:ccpDialog_showFastScroller="false"
+                app:ccpDialog_showFlag="true"
+                app:ccpDialog_showPhoneCode="true"
+                app:ccpDialog_showTitle="false"
+                app:ccpDialog_textColor="@color/appColorBlack"
+                app:ccp_arrowColor="@color/appColorBlack"
+                app:ccp_arrowSize="20dp"
+                app:ccp_autoDetectCountry="true"
+                app:ccp_autoDetectLanguage="true"
+                app:ccp_autoFormatNumber="true"
+                app:ccp_clickable="false"
+                app:ccp_contentColor="@color/appColorBlack"
+                app:ccp_countryAutoDetectionPref="SIM_ONLY"
+                app:ccp_countryPreference="AF"
+                app:ccp_defaultLanguage="ENGLISH"
+                app:ccp_defaultNameCode="AF"
+                app:ccp_hintExampleNumber="true"
+                app:ccp_hintExampleNumberType="FIXED_LINE"
+                app:ccp_rememberLastSelection="true"
+                app:ccp_selectionMemoryTag="signupCCP"
+                app:ccp_showArrow="false"
+                app:ccp_showFlag="true"
+                app:ccp_showFullName="false"
+                app:ccp_showNameCode="false"
+                app:ccp_showPhoneCode="true"
+                app:ccp_textGravity="CENTER"
+                app:ccp_textSize="20sp" />
+
+            <LinearLayout
+                android:id="@+id/lPhone"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_marginStart="@dimen/_2sdp"
+                android:layout_marginBottom="@dimen/_2sdp"
+                android:layout_weight="2"
+                android:background="@drawable/custom_white_container"
+                android:elevation="@dimen/_2sdp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingStart="@dimen/_8sdp"
+                android:paddingEnd="@dimen/_8sdp">
+
+                <TextView
+                    android:id="@+id/tvPhone"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="01002655760"
+                    android:textColor="@color/appColorBlack"
+                    android:textSize="@dimen/_12ssp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|end"
+                    android:background="@drawable/container_remaining"
+                    android:padding="@dimen/_4sdp"
+                    android:text="Resend(30)"
+                    android:textColor="@color/appColorWhite"
+                    android:textSize="@dimen/_8ssp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_marginStart="@dimen/_32sdp"
+            android:layout_marginTop="@dimen/_16sdp"
+            android:layout_marginEnd="@dimen/_32sdp"
+            android:layout_marginBottom="@dimen/_2sdp"
+            android:background="@drawable/custom_white_container"
+            android:elevation="@dimen/_2sdp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingStart="@dimen/_8sdp"
+            android:paddingEnd="@dimen/_8sdp">
+
+            <EditText
+                android:id="@+id/etFirst"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="1" />
+
+            <TextView
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/_4sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_marginEnd="@dimen/_4sdp"
+                android:layout_marginBottom="@dimen/_8sdp"
+                android:background="@color/gray" />
+
+            <EditText
+                android:id="@+id/etSecond"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="1" />
+
+            <TextView
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/_4sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_marginEnd="@dimen/_4sdp"
+                android:layout_marginBottom="@dimen/_8sdp"
+                android:background="@color/gray" />
+
+            <EditText
+                android:id="@+id/etThird"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="1" />
+
+            <TextView
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/_4sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_marginEnd="@dimen/_4sdp"
+                android:layout_marginBottom="@dimen/_8sdp"
+                android:background="@color/gray" />
+
+            <EditText
+                android:id="@+id/etForth"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="1" />
+
+            <TextView
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/_4sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_marginEnd="@dimen/_4sdp"
+                android:layout_marginBottom="@dimen/_8sdp"
+                android:background="@color/gray" />
+
+            <EditText
+                android:id="@+id/etFifth"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="1" />
+
+            <TextView
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/_4sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_marginEnd="@dimen/_4sdp"
+                android:layout_marginBottom="@dimen/_8sdp"
+                android:background="@color/gray" />
+
+            <EditText
+                android:id="@+id/etSix"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="1" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btNext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_32sdp"
+            android:layout_marginTop="@dimen/_16sdp"
+            android:layout_marginEnd="@dimen/_32sdp"
+            android:layout_marginBottom="@dimen/_2sdp"
+            android:background="@drawable/custom_inactive_container"
+            android:enabled="false"
+            android:text="@string/next"
+            android:textColor="@color/appColorWhite" />
+
+        <TextView
+            android:id="@+id/tvCantAccess"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_16sdp"
+            android:text="@string/can_t_access_this_phone_number"
+            android:textColor="@color/loginEnd" />
+    </LinearLayout>
+</LinearLayout>

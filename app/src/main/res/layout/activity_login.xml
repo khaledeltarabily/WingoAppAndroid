@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/tbSign"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"/>
+
+    <ImageView
+        android:id="@+id/ivLoginLogo"
+        android:layout_width="@dimen/_120sdp"
+        android:layout_height="@dimen/_60sdp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/_16sdp"
+        android:layout_below="@id/tbSign"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/login_logo"/>
+    <LinearLayout
+        android:id="@+id/lSign"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/etEnterPass"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_marginStart="@dimen/_32sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:layout_marginEnd="@dimen/_32sdp"
+            android:inputType="textPassword"
+            android:paddingEnd="@dimen/_8sdp"
+            android:paddingStart="@dimen/_8sdp"
+            android:hint="@string/enter_password"
+            android:textColorHint="@color/gray"
+            android:background="@drawable/custom_white_container"
+            android:elevation="@dimen/_2sdp"
+            android:gravity="center_vertical" />
+
+        <Button
+            android:id="@+id/btSignup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_32sdp"
+            android:layout_marginTop="@dimen/_16sdp"
+            android:layout_marginEnd="@dimen/_32sdp"
+            android:layout_marginBottom="@dimen/_2sdp"
+            android:background="@drawable/custom_inactive_container"
+            android:text="@string/sign_up"
+            android:textColor="@color/appColorWhite" />
+
+    </LinearLayout>
+</RelativeLayout>
+

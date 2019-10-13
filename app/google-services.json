@@ -1,0 +1,64 @@
+{
+  "project_info": {
+    "project_number": "964994869093",
+    "firebase_url": "https://wingo-live.firebaseio.com",
+    "project_id": "wingo-live",
+    "storage_bucket": "wingo-live.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:964994869093:android:06769286810f674f65638c",
+        "android_client_info": {
+          "package_name": "com.successpoint.wingo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "964994869093-u951j8jb2omjl0h1khg1jtis0o20peuk.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.successpoint.wingo",
+            "certificate_hash": "4b67c8790b91d26a7a68d2a9c8f72ec6b18f34df"
+          }
+        },
+        {
+          "client_id": "964994869093-l7ckr3vfbi1l6r8mjjr85h5qpm34l0el.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.successpoint.wingo",
+            "certificate_hash": "a4c49f6ec646d657fb4137258803a7a631b53e47"
+          }
+        },
+        {
+          "client_id": "964994869093-slbjvhkeohm9s2kpsefofespulq4civf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDhbmisrOl3XYtzg-c7KChrx1XdEnlmiWI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "964994869093-dds2l2c7a123iftpjg8nk6lvtp39oh8b.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "964994869093-7et2ffjdg29b4q43oa8077f7bh2n73un.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.wingo-live.wingoapp",
+                "app_store_id": "1478089001"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

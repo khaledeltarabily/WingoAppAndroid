@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_8sdp"
+        android:text="@string/notifications"
+        android:textColor="@color/appColorBlack"
+        android:textSize="@dimen/_14ssp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/live"
+        android:gravity="center"
+        android:textSize="@dimen/_14ssp"
+        android:padding="@dimen/_4sdp"
+        android:layout_marginStart="@dimen/_16sdp"
+        android:layout_marginEnd="@dimen/_16sdp"
+        android:drawableTop="@drawable/live"
+        android:background="@drawable/custom_orange_bordered"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_64sdp"
+        android:layout_marginEnd="@dimen/_64sdp"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/notlogo"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textSize="@dimen/_12ssp"
+        android:text="@string/no_broadcasts_you_follow_are_live"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/go_follow"
+        android:layout_gravity="center_horizontal"
+        android:paddingEnd="@dimen/_16sdp"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:paddingStart="@dimen/_16sdp"
+        android:textColor="@color/appColorWhite"
+        android:background="@drawable/gradient_login"/>
+</LinearLayout>

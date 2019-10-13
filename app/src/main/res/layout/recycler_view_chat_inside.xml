@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/name"
+        android:padding="@dimen/_5sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="Feedback"
+        android:layout_gravity="center"
+        android:background="#eee"
+        android:gravity="center"
+        android:textColor="@color/appColorBlack"
+        android:textSize="@dimen/_14ssp" />
+<androidx.recyclerview.widget.RecyclerView
+    android:layout_width="match_parent"
+    android:layout_weight="1"
+    android:id="@+id/recycler"
+    android:layout_height="match_parent"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_height="@dimen/_60sdp">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:id="@+id/image_add"
+            android:padding="@dimen/_5sdp"
+            android:src="@drawable/upload_image"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:layout_width="match_parent"
+            android:background="@color/whitecolor"
+            android:layout_weight="1"
+            android:id="@+id/Comment_Text"
+            android:padding="@dimen/_5sdp"
+            android:hint="Write Here"
+            android:layout_margin="@dimen/_5sdp"
+            android:layout_height="match_parent" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:id="@+id/imageSend"
+            android:padding="@dimen/_5sdp"
+            android:src="@drawable/sent_mail"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+
+    <color name="whitecolor">#fff</color>
+
+    <color name="orangedark_color">#fa7806</color>
+
+    <color name="blackcolor">#000000</color>
+
+    <color name="transparent">#00000000</color>
+
+    <color name="scancolor">#313030</color>
+
+    <color name="black">#000</color>
+
+    <color name="ligthorange">#ffb70b</color>
+
+    <color name="darkOrange">#d79200</color>
+
+    <color name="colorPrimary">#FFFFFF</color>
+
+    <color name="colorPrimaryDark">#FFFFFF</color>
+
+    <color name="colorAccent">#8E2DE2</color>
+
+    <color name="colorControlActivated">#3a434f</color>
+
+    <color name="appColorWhite">#FFFFFF</color>
+
+    <color name="appColorSemiWhite">#E6FFFFFF</color>
+
+    <color name="appColorBlack">#000000</color>
+
+    <color name="appColorBlackTrans">#80000000</color>
+
+    <color name="appColorGray">#585858</color>
+
+    <color name="inactive">#d5d5d5</color>
+
+    <color name="gray">#aba6a6</color>
+
+    <color name="lightGray">#C5C2C2</color>
+
+    <color name="semiTransGray">#80ABA6A6</color>
+
+    <color name="appColorRed">#FF0000</color>
+
+    <color name="appColorDarkRed">#AA000C</color>
+
+    <color name="appColorGrayLight">#707070</color>
+
+    <color name="appColorSemiGrayLight">#D3707070</color>
+
+    <color name="profileColor">#00BCD4</color>
+
+    <color name="navTextColor">#00BCD4</color>
+
+    <color name="textColor">#4CAAAA</color>
+
+    <color name="blue">#1565C0</color>
+
+    <color name="strong">#30dc5f</color>
+
+    <color name="medium">#ffcb00</color>
+
+    <color name="poor">#ff0000</color>
+
+    <color name="loginStart">#fa9d00</color>
+
+    <color name="loginEnd">#f85512</color>
+
+    <color name="google_yellow">#FBBC05</color>
+
+    <color name="google_green">#34A853</color>
+
+    <color name="colorTransparent">#00000000</color>
+
+    <color name="appColorOffWhite">#60ffffff</color>
+
+    <color name="appColorWhiteGray">#E7E7E7</color>
+
+    <color name="appColorDarkerGray">#efefef</color>
+
+    <color name="fab_color">#F8CC50</color>
+
+    <color name="colorGrayTransparent">#c0747568</color>
+
+    <color name="demo_dark_transparent">#24000000</color>
+
+    <color name="demo_dark_gray">#aadfd1d1</color>
+
+    <color name="appColorPrimaryDarkTransparent">#6cde2727</color>
+
+    <color name="appColorYellow">#FBBC05</color>
+
+    <color name="dark_color">#fa7806</color>
+
+    <color name="ligthblack"> #313030 </color>
+
+    <color name="orange_vertical_line">#fcddb3</color>
+
+    <color name="dark_purple">#8E2DE2</color>
+
+    <color name="ligth_purple" >#B317E2</color>
+
+</resources>

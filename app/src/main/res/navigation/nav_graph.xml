@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph.xml"
+    app:startDestination="@id/profileFragment">
+
+    <fragment
+        android:id="@+id/popularFragment"
+        android:name="com.successpoint.wingo.view.mainactivity.fragments.popular.PopularFragment"
+        android:label="fragment_popular"
+        tools:layout="@layout/fragment_popular" >
+        <action
+            android:id="@+id/action_nearby"
+            app:destination="@id/nearbyFragment" />
+        <action
+            android:id="@+id/action_explore"
+            app:destination="@id/exploreFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/exploreFragment"
+        android:name="com.successpoint.wingo.view.mainactivity.fragments.explore.ExploreFragment"
+        android:label="ExploreFragment" >
+        <action
+            android:id="@+id/action_exploreFragment_to_popularFragment"
+            app:destination="@id/popularFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/nearbyFragment"
+        android:name="com.successpoint.wingo.view.mainactivity.fragments.nearby.NearbyFragment"
+        android:label="NearbyFragment" >
+        <action
+            android:id="@+id/action_popular"
+            app:destination="@id/popularFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.successpoint.wingo.view.mainactivity.fragments.Profile.ProfileFragment"
+        android:label="profileFragment" >
+        <action
+            android:id="@+id/action_profile"
+            app:destination="@id/profileFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/chatFragment"
+        android:name="com.successpoint.wingo.view.ChatFragment.ChatFragment"
+        android:label="chatFragment" >
+        <action
+            android:id="@+id/action_chat"
+            app:destination="@id/chatFragment" />
+    </fragment>
+</navigation>

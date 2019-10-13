@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: com.hannesdorfmann.mosby3:viewstate:3.1.1@aar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/95a720a8bd276c7127880b1776b8b188/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/95a720a8bd276c7127880b1776b8b188/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.hannesdorfmann.mosby3/viewstate/3.1.1/1152ddebcfad7d9c41dfe3359e7bdec1a76961c2/viewstate-3.1.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
